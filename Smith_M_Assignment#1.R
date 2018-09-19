@@ -14,5 +14,9 @@ median(Assignment_1[1:51,3])
 copydata=Assignment_1
 subcopydata=subset(copydata,State== "CT" | State== "MA" | State== "ME" | State== "NH" | State== "RI" |State== "VT")
 mean(subcopydata[1:6,3])
+
+#Not too sure what the 555 is doing here.
 copydata<-ifelse(test=is.na(copydata$Vcrime)==T, yes= 555, no=copydata$Vcrime)
 mean(copydata)
+
+#100 out of 100
